@@ -41,3 +41,21 @@ function formatCurrency(amount) {
     }).format(amount);
 }
 
+
+function llenarOpcionesPlazo() {
+    const plazoSelect = document.getElementById('plazo');
+    const minPlazo = 12; // 12 meses como plazo mínimo
+    const maxPlazo = 120; // 120 meses como plazo máximo
+
+    for (let i = minPlazo; i <= maxPlazo; i += 12) {
+        const option = document.createElement('option');
+        option.value = i;
+        option.textContent = i;
+        plazoSelect.appendChild(option);
+    }
+}
+
+// Llamar a llenarOpcionesPlazo() cuando el contenido del documento esté cargado
+document.addEventListener('DOMContentLoaded', function () {
+    llenarOpcionesPlazo();
+});
