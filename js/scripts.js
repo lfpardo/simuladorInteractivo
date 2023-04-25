@@ -22,8 +22,11 @@ document.getElementById('simulador-credito').addEventListener('submit', function
 function calcularCostoSeguro(valorVehiculo, edad) {
     const tasaBase = 0.03;
     const tasaEdad = edad < 25 ? 0.02 : 0;
+    const descuento = valorVehiculo > 80000000 ? 0.05 : 0; // Descuento del 5% si el valor del vehículo es mayor a 80,000,000 COP
 
-    const costoSeguro = valorVehiculo * (tasaBase + tasaEdad);
+    let costoSeguro = valorVehiculo * (tasaBase + tasaEdad);
+    costoSeguro = costoSeguro * (1 - descuento); // Aplicar el descuento al costo del seguro, si corresponde
+
     return costoSeguro;
 }
 
