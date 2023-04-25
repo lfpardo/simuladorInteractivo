@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cotizador de Seguro y Simulador de Crédito</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="my-4">Cotizador de Seguro</h1>
+    <form id="cotizador-seguro" class="mb-4">
+      <div class="form-group">
+        <label for="valor-vehiculo">Valor del vehículo (COP):</label>
+        <input type="number" class="form-control" id="valor-vehiculo" required>
+      </div>
+      <div class="form-group">
+        <label for="edad">Edad del asegurado:</label>
+        <input type="number" class="form-control" id="edad" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Cotizar</button>
+    </form>
+    <h2>Costo del seguro: <span id="costo-seguro">0</span> COP</h2>
+
+    <h1 class="my-4">Simulador de Crédito</h1>
+    <form id="simulador-credito" class="mb-4">
+      <div class="form-group">
+        <label for="monto">Monto del crédito (COP):</label>
+        <input type="number" class="form-control" id="monto" required>
+      </div>
+      <div class="form-group">
+        <label for="tasa">Tasa de interés anual (%):</label>
+        <input type="number" class="form-control" id="tasa" step="0.01" required>
+      </div>
+      <div class="form-group">
+        <label for="plazo">Plazo (meses):</label>
+        <input type="number" class="form-control" id="plazo" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Calcular</button>
+        </form>
+        <h2>Pago mensual: <span id="pago-mensual">0</span> COP</h2>
+        
+          </div>
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+          <script src="./js/scripts.js"></script>
+        </body>
+        </html>

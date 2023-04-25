@@ -1,0 +1,17 @@
+/* Estilos personalizados para los títulos */
+h1, h2 {
+    color: #007bff; /* Color principal de Bootstrap */
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
